@@ -1,8 +1,8 @@
 package main
 
 import (
+	"dirs/web"
 	"flag"
-	"zwh/web"
 
 	"github.com/gin-gonic/gin"
 )
