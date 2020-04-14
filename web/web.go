@@ -20,4 +20,5 @@ func Dirs(c *gin.Context) {
 	}
 	r.Path = path
 	c.JSON(http.StatusOK, r)
+	return
 }
