@@ -21,7 +21,6 @@ type (
 func GetAllFile(path string) (result, error) {
 	s := list.New()
 	var r result
-	r.Path = path
 	r, err := getAllFile(path, s, r)
 	if err != nil {
 		return r, err

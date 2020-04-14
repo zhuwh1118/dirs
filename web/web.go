@@ -18,5 +18,6 @@ func Dirs(c *gin.Context) {
 	if err != nil {
 		c.AbortWithError(http.StatusInternalServerError, fmt.Errorf("walk dir failed"))
 	}
+	r.Path = path
 	c.JSON(http.StatusOK, r)
 }
