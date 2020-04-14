@@ -3,15 +3,9 @@ package process
 import (
 	"container/list"
 	"io/ioutil"
-	"sync"
 )
 
 type (
-	Result struct {
-		mut sync.Mutex
-		Res result
-	}
-
 	result struct {
 		Path string
 		Dirs []dirs
