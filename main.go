@@ -14,6 +14,6 @@ func init() {
 func main() {
 	flag.Parse()
 	r := gin.Default()
-	r.GET("/v1/dirs", web.Dirs)
+	r.GET("/v1/directory", web.Dirs)
 	r.Run(":9000")
 }
